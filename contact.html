@@ -3,50 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | iACS</title>
+  <title>Contact | iACS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans leading-relaxed">
-  <header class="bg-gray-800">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-     <a href="index.html" class="text-2xl font-bold text-white">iACS</a>
+<body class="bg-gray-950 text-white font-sans flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-3xl font-bold text-blue-500">iACS</a>
       <nav>
-        <ul class="flex space-x-6">
-          <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+        <ul class="flex space-x-6 text-sm">
           <li><a href="about.html" class="hover:text-blue-400">About</a></li>
           <li class="relative group">
             <button class="hover:text-blue-400">Services</button>
-            <ul class="absolute hidden group-hover:block bg-gray-700 mt-2 rounded shadow-lg">
-              <li><a href="oracle-services.html" class="block px-4 py-2 hover:bg-gray-600">Oracle Services</a></li>
-              <li><a href="telecom-services.html" class="block px-4 py-2 hover:bg-gray-600">Telecommunication</a></li>
+            <ul class="absolute bg-gray-800 text-white mt-2 hidden group-hover:block rounded shadow-lg text-left">
+              <li><a href="oracle-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Oracle</a></li>
+              <li><a href="sap-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">SAP</a></li>
+              <li><a href="telecom-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Telecom</a></li>
             </ul>
           </li>
-          <li><a href="clients.html" class="hover:text-blue-400">Clients</a></li>
           <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-6xl mx-auto px-6 py-20">
+  <!-- Main Content -->
+  <main class="flex-grow py-20 px-6 max-w-6xl mx-auto">
     
-    <section class="bg-cover bg-center bg-[#0D1B2A] text-white py-24 text-center">
-      <div class="max-w-3xl mx-auto px-6">
-        <h2 class="text-5xl font-extrabold mb-4">Contact Us</h2>
-        <p class="text-lg mb-6">Let’s start a conversation — we’re ready to help.</p>
-        
-      </div>
-    </section>
-    <section class="text-center py-20 px-6 max-w-4xl mx-auto text-white-300">
-      <p class="mb-4 text-lg">📍 B-20, Block-5 Gulshan-e-Iqbal, Karachi, Pakistan</p>
-      <p class="mb-4 text-lg">📞 +92 21 34967409 | +92-213-4969191</p>
-      <p class="text-lg">✉️ <a href="mailto:info@iacsol.com" class="text-blue-500 underline">info@iacsol.com</a></p>
-    </section>
-    
+<h2 class="text-3xl font-bold text-blue-400 mb-6 text-center">Get in Touch</h2>
+<p class="text-center text-gray-300 mb-10">We’d love to hear from you. Fill out the form and our team will be in touch.</p>
+<div class="max-w-4xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg text-gray-100">
+  <form action="https://formsubmit.co/bilal.dhool@iacsol.de" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <input type="hidden" name="_captcha" value="false">
+    <div class="col-span-1">
+      <label class="block mb-2">Name</label>
+      <input type="text" name="name" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+    <div class="col-span-1">
+      <label class="block mb-2">Email</label>
+      <input type="email" name="email" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    </div>
+    <div class="col-span-2">
+      <label class="block mb-2">Message</label>
+      <textarea name="message" rows="5" required class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+    </div>
+    <div class="col-span-2 text-center mt-4">
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold">Send Message</button>
+    </div>
+  </form>
+</div>
+
+<div class="mt-10 text-center text-gray-400">
+  <h3 class="text-2xl font-semibold text-white mb-4">Our Services</h3>
+  <ul class="space-y-2 text-lg text-gray-300">
+    <li>• Oracle Consultancy</li>
+    <li>• SAP Consultancy</li>
+    <li>• Telecommunication Consultancy</li>
+  </ul>
+  <p class="mt-6">Werner-von-Siemens-Straße 2-6, 76646 Bruchsal, Germany</p>
+  <p>📞 +49 7251 3272442 | 🌐 <a href="https://www.iacsol.de" class="text-blue-400">www.iacsol.de</a></p>
+</div>
+
   </main>
 
-  <footer class="bg-gray-800 text-center text-gray-400 py-6">
-    © 2025 iAmplify Consulting Solutions (iACS). All rights reserved.
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center text-gray-500 py-6">
+    © 2025 iAmplify Consulting Solutions GmbH. All rights reserved.
   </footer>
 </body>
 </html>
