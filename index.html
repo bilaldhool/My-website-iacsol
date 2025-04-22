@@ -3,59 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>iACS | Digital Solutions</title>
+  <title>iACS | Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero {
+      background: url('hero.jpg') center center / cover no-repeat;
+    }
+  </style>
 </head>
-<body class="bg-gray-950 text-white font-sans flex flex-col min-h-screen">
-<header class="bg-gradient-to-r from-gray-900 to-gray-800 shadow-md">
+<body class="bg-gray-950 text-white font-sans">
+
+<header class="absolute top-0 left-0 right-0 z-50 bg-black/60">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <a href="index.html" class="text-3xl font-bold text-blue-400 tracking-wide">iACS</a>
+    <a href="index.html" class="text-2xl font-bold text-white">iACS</a>
     <nav>
       <ul class="flex space-x-6 text-sm">
         <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
         <li><a href="about.html" class="hover:text-blue-400">About</a></li>
-        <li class="relative group">
-          <button class="hover:text-blue-400">Services</button>
-          <ul class="absolute bg-gray-800 mt-2 hidden group-hover:block rounded shadow-lg text-left">
-            <li><a href="oracle-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Oracle</a></li>
-            <li><a href="sap-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">SAP</a></li>
-            <li><a href="telecom-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Telecom</a></li>
-          </ul>
-        </li>
         <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main class="flex-grow">
-  <section class="relative w-full h-[30rem]">
-    <img src="banner.jpg" class="absolute inset-0 w-full h-full object-cover opacity-70">
-    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
-      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Innovate. Integrate. Accelerate.</h1>
-      <p class="text-lg md:text-xl max-w-2xl text-gray-200">iACS provides end-to-end IT consultancy with Oracle, SAP, and Telecom expertise.</p>
-      <a href="contact.html" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold">Let's Collaborate</a>
+<main>
+  <!-- Hero Section -->
+  <section class="hero h-[36rem] relative flex flex-col items-center justify-center text-center text-white px-6">
+    <div class="bg-black/60 absolute inset-0"></div>
+    <div class="z-10 relative">
+      <h1 class="text-5xl font-extrabold mb-4">Innovate. Integrate. Accelerate.</h1>
+      <p class="text-lg mb-6">iACS provides end-to-end IT consultancy with Oracle, SAP, and Telecom expertise.</p>
+      <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold">Let's Collaborate</a>
     </div>
   </section>
 
-  <section class="py-20 bg-gray-900 px-6">
+  <!-- Services -->
+  <section class="bg-gray-900 py-20 px-6">
     <h2 class="text-3xl font-bold text-center mb-12">Our Core Services</h2>
-    <div class="grid gap-10 md:grid-cols-3 max-w-7xl mx-auto">
-      <a href="oracle-consultancy.html" class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition text-center">
-        <img src="banner.jpg" class="h-40 w-full object-cover rounded mb-4" alt="Oracle">
-        <h3 class="text-xl font-semibold text-blue-400 mb-2">Oracle Consultancy</h3>
-        <p class="text-gray-300 text-sm">Expertise in EBS, DBA, development, upgrades, licensing.</p>
-      </a>
-      <a href="sap-consultancy.html" class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition text-center">
-        <img src="banner.jpg" class="h-40 w-full object-cover rounded mb-4" alt="SAP">
-        <h3 class="text-xl font-semibold text-blue-400 mb-2">SAP Consultancy</h3>
-        <p class="text-gray-300 text-sm">SAP Fiori, BTP, analytics, FI/CO, optimization services.</p>
-      </a>
-      <a href="telecom-consultancy.html" class="bg-gray-800 rounded-lg p-6 hover:shadow-xl transition text-center">
-        <img src="banner.jpg" class="h-40 w-full object-cover rounded mb-4" alt="Telecom">
-        <h3 class="text-xl font-semibold text-blue-400 mb-2">Telecommunication</h3>
-        <p class="text-gray-300 text-sm">BNetzA compliance, network integration, site rollout.</p>
-      </a>
+    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+        <img src="oracle.jpg" alt="Oracle" class="rounded-md h-48 w-full object-cover mb-4" />
+        <h3 class="text-lg font-bold text-white mb-2">Oracle Consultancy</h3>
+        <p class="text-gray-300 text-sm">Expertise in EBS, DBA, custom development, upgrades, and license analysis.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+        <img src="sap.jpg" alt="SAP" class="rounded-md h-48 w-full object-cover mb-4" />
+        <h3 class="text-lg font-bold text-white mb-2">SAP Consultancy</h3>
+        <p class="text-gray-300 text-sm">Implementation of SP modules, FICO, DEP analytics, 8/EHANA based optimization.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+        <img src="telecom.jpg" alt="Telecom" class="rounded-md h-48 w-full object-cover mb-4" />
+        <h3 class="text-lg font-bold text-white mb-2">Telecommunication</h3>
+        <p class="text-gray-300 text-sm">Network planning integration, BNetzA approval, project management.</p>
+      </div>
     </div>
   </section>
 </main>
