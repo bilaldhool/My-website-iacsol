@@ -1,73 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>iACS | Tech Consulting Experts</title>
+  <title>Index | iACS</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-950 text-white font-sans flex flex-col min-h-screen">
-
-  <!-- Header -->
   <header class="bg-gray-900">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <a href="index.html" class="text-3xl font-bold text-blue-500">iACS</a>
-      <nav>
-        <ul class="flex space-x-6 text-sm">
-          <li><a href="about.html" class="hover:text-blue-400">About</a></li>
-          <li class="relative group">
-            <button class="hover:text-blue-400">Services</button>
-            <ul class="absolute bg-gray-800 text-white mt-2 hidden group-hover:block rounded shadow-lg text-left">
-              <li><a href="oracle-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Oracle</a></li>
-              <li><a href="sap-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">SAP</a></li>
-              <li><a href="telecom-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Telecom</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
-        </ul>
-      </nav>
+      <nav><ul class="flex space-x-6 text-sm">
+        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+        <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+        <li class="relative group">
+          <button class="hover:text-blue-400">Services</button>
+          <ul class="absolute bg-gray-800 text-white mt-2 hidden group-hover:block rounded shadow-lg text-left">
+            <li><a href="oracle-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Oracle</a></li>
+            <li><a href="sap-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">SAP</a></li>
+            <li><a href="telecom-consultancy.html" class="block px-4 py-2 hover:bg-gray-700">Telecom</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+      </ul></nav>
     </div>
   </header>
+  <main class="flex-grow py-16 px-6 max-w-6xl mx-auto">
+    
+<section class="text-center py-16 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
+  <img src="https://source.unsplash.com/1600x900/?technology,consulting" alt="Tech Consulting" class="mx-auto rounded-lg mb-10 shadow-lg max-h-96 object-cover w-full">
+  <h1 class="text-5xl font-extrabold mb-6 text-blue-400">Innovate. Integrate. Accelerate.</h1>
+  <p class="text-xl text-gray-300 mb-8">iACS provides end-to-end IT consultancy with Oracle, SAP, and Telecom expertise.</p>
+  <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-white font-semibold">Let's Collaborate</a>
+</section>
 
-  <!-- Main -->
-  <main class="flex-grow">
-    <!-- Hero -->
-    <section class="text-center py-24 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
-      <h1 class="text-5xl font-extrabold mb-6 text-blue-400">Innovate. Integrate. Accelerate.</h1>
-      <p class="text-xl text-gray-300 mb-8">iACS provides end-to-end IT consultancy with Oracle, SAP, and Telecom expertise.</p>
-      <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-white font-semibold">Let's Collaborate</a>
-    </section>
+<section class="text-center py-20 px-6 bg-gray-900">
+  <h2 class="text-3xl font-bold mb-10 text-white">Our Core Services</h2>
+  <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+    <a href="oracle-consultancy.html" class="block bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition">
+      <img src="https://source.unsplash.com/400x300/?oracle,database" alt="Oracle" class="rounded mb-4 w-full h-48 object-cover">
+      <h3 class="text-lg font-semibold text-blue-400 mb-2">Oracle Consultancy</h3>
+      <p class="text-gray-300 text-sm">Expertise in EBS, DBA, custom development, upgrades, and licensing.</p>
+    </a>
+    <a href="sap-consultancy.html" class="block bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition">
+      <img src="https://source.unsplash.com/400x300/?sap,software" alt="SAP" class="rounded mb-4 w-full h-48 object-cover">
+      <h3 class="text-lg font-semibold text-blue-400 mb-2">SAP Consultancy</h3>
+      <p class="text-gray-300 text-sm">SAP modules, Fiori, analytics, BTP and Signavio-based optimization.</p>
+    </a>
+    <a href="telecom-consultancy.html" class="block bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition">
+      <img src="https://source.unsplash.com/400x300/?telecom,network" alt="Telecom" class="rounded mb-4 w-full h-48 object-cover">
+      <h3 class="text-lg font-semibold text-blue-400 mb-2">Telecommunication</h3>
+      <p class="text-gray-300 text-sm">Planning, integration, BNetzA compliance, and system handover.</p>
+    </a>
+  </div>
+</section>
 
-    <!-- Core Services Cards -->
-    <section class="text-center py-20 px-6 bg-gray-900">
-      <h2 class="text-3xl font-bold mb-10 text-white">Our Core Services</h2>
-      <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold text-blue-400 mb-2">Oracle Consultancy</h3>
-          <p class="text-gray-300 text-sm">Expertise in EBS, DBA, custom development, upgrades, and licensing.</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold text-blue-400 mb-2">SAP Consultancy</h3>
-          <p class="text-gray-300 text-sm">Implementation of SAP modules, Fiori, BTP, analytics & Signavio-based optimization.</p>
-        </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold text-blue-400 mb-2">Telecommunication</h3>
-          <p class="text-gray-300 text-sm">Network planning, integration, BNetzA compliance, and system handover.</p>
-        </div>
-      </div>
-    </section>
+<section class="text-center py-20 px-6 bg-gray-950">
+  <h2 class="text-xl font-semibold mb-6">Need a tailored solution for your enterprise?</h2>
+  <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-white font-semibold">Get in Touch</a>
+</section>
 
-    <!-- CTA -->
-    <section class="text-center py-20 px-6 bg-gray-950">
-      <h2 class="text-xl font-semibold mb-6">Need a tailored solution for your enterprise?</h2>
-      <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full text-white font-semibold">Get in Touch</a>
-    </section>
   </main>
-
-  <!-- Footer -->
   <footer class="bg-gray-800 text-center text-gray-500 py-6">
     © 2025 iAmplify Consulting Solutions GmbH. All rights reserved.
   </footer>
-
-</body>
-</html>
+</body></html>
